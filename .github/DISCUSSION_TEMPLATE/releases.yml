@@ -4,11 +4,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        **Welcome to the Release Discussion!**
+        ## Release Discussion
+      
+        **Welcome to the official Discussion thread for this Release!**
   - type: dropdown
     attributes:
-      label: What is the type of release?
-      description: Select the release type
+      label: Release Type
+      description: Select the appropriate type of release
       options:
         - Major Release
         - Minor Release
@@ -19,10 +21,13 @@ body:
     id: deployment_info
     attributes:
       label: Deployment Information
-      description: "Provide the deployment details"
+      description: |
+        "Provide the relevant deployment details, including links to documentation and workflows." 
       value: |
+        **Related Documentation** 
         [Post/Pre Deployment Steps](/docs/runbooks/release_mm_dd_yyyy)
-      
+
+         **Deployment Workflow**
         [Release Deployment](https://example.com)
     validations:
       required: true
