@@ -1,4 +1,4 @@
-title: "Release_<dd>_<mm>_<yyyy>"
+title: "Release_dd_mm_yyyy"
 labels: ["Project Releases"]
 body:
   - type: markdown
@@ -6,19 +6,21 @@ body:
       value: |
         **Welcome to the Release Discussion!**
         Please fill out the details below
-  - type: input
+  - type: textarea
     id: deployment_url
     attributes:
       label: Deployment URL
       description: "Provide the URL to the deployment workflow"
-      placeholder: https://example.com
+      placeholder: |
+        [Deployment URL](https://example.com)
     validations:
       required: true
-  - type: input
+  - type: textarea
     id: deployment_steps
     attributes:
       label: Deployment Runbook Steps
       description: "Enter the path or link to the deployment runbook steps"
-      placeholder: "/docs/runbooks/release_dd_mm_yyyy.md"
+      placeholder: |
+        [Deployment Runbook Steps](/docs/runbooks/release_dd_mm_yyyy.md)
     validations:
       required: true
