@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: deployment_info
     attributes:
-      # label: Deployment Information
+      label: Deployment Information
       description: |
         "Provide the relevant deployment details, including links to documentation and workflows." 
       value: |
@@ -28,7 +28,7 @@ body:
         
         [Post/Pre Deployment Steps](/docs/runbooks/release_mm_dd_yyyy)
 
-         ## Deployment Workflow
+        ## Deployment Workflow
          
         [Release Deployment](https://example.com)
     validations:
