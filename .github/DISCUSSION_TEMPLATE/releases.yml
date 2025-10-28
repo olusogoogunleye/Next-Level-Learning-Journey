@@ -1,4 +1,5 @@
-
+title: "Release_dd_mm_yyyy"
+labels: ["Project Releases"]
 body:
   - type: markdown
     attributes:
@@ -12,6 +13,7 @@ body:
       description: "Provide the URL to the deployment workflow"
       placeholder: |
         [Deployment URL](https://example.com)
+      render: markdown
     validations:
       required: true
   - type: textarea
@@ -21,5 +23,6 @@ body:
       description: "Enter the path or link to the deployment runbook steps"
       placeholder: |
         [Deployment Runbook Steps](/docs/runbooks/release_dd_mm_yyyy.md)
+      render: markdown
     validations:
       required: true
