@@ -33,13 +33,7 @@ body:
         [Release Deployment](https://example.com)
     validations:
       required: true
-  - type: textarea
-    id: deployment_url
-    attributes:
-      label: Deployment URL
-      description: "Provide the deployment link. You can use Markdown link syntax."
-      placeholder: "[Release Deployment](https://your-link-here.com)"
-      render: markdown
+  
     validations:
       required: true
   
