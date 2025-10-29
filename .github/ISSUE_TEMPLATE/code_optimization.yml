@@ -1,0 +1,41 @@
+name: Code Optimization Request
+description: Request to Optimize existing code
+assignees:
+  - olusogoogunleye
+labels: [code-optimization]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before Submitting
+
+        "Please search existing issues to ensure this optimization request has not already been submitted."
+        "Duplicate issues will result to further delay in processing times."
+  - type: checkboxes
+    id: duplicate_check
+    attributes:
+      label: Confirmation
+      description: Confirm you have verified that this optimization request does not already exist.
+      options:
+        - label: "I have searched existing issues and did not find a duplicate."
+          required: true
+  - type: textarea
+    id: optimization_summary
+    attributes:
+      label: Summary
+      description: "Briefly describe what needs optimization and why."
+      placeholder: |
+        Example: The AccountService class performs multiple redundant SOQL queries inside a loop.
+        Recommend bulkification to improve performance and reduce governor limit usage.
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: completion_date
+    attributes:
+      label: Expected Completion Date
+      description: "Specify expected available time"
+      value: |
+        mm-dd-yyy
+    validations:
+      required: true
