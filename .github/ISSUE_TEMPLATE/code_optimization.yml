@@ -3,7 +3,7 @@ description: Request to Optimize existing code
 title: "Optimize {Component/Class Name}"
 assignees:
   - olusogoogunleye
-labels: [code-optimization]
+labels: ["code-optimization"]
 body:
   - type: input
     id: optimization_goal
