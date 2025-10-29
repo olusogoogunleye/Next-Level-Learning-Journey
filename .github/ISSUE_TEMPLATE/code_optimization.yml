@@ -5,12 +5,29 @@ assignees:
   - olusogoogunleye
 labels: [code-optimization]
 body:
-  - type: textarea
-    id: optimization_summary
+  - type: input
+    id: optimization_goal
     attributes:
-      label: Summary
-      description: "What is the purpose of this optimization?"
-      placeholder: "Example: Improve the SOQL query efficiency in AccountDataService to reduce governor limit usage."
+      label: Optimization Goal
+      description: "Briefly describe the goal of this optimization."
+      placeholder: |
+        Example: Improve the SOQL query efficiency in AccountDataService to reduce governor limit usage.
+    validations:
+      required: true
+  - type: textarea
+    id: current_implementation
+    attributes:
+      label: Current Implementation/Issue
+      description: "Describe the current behavior and specific problems that you have identified"
+      placeholder: "Example: Multiple redundant queries are being made for each record in a loop."
+    validations:
+      required: true
+  - type: textarea
+    id: expected_outcome
+    attributes:
+      label: Expected Outcome
+      description: "Specify the measurable improvements or results expected from this optimization."
+      placeholder: "Example: Reduce CPU time by 30% and ensure the process handles up to 10,000 records without errors."
     validations:
       required: true
   - type: dropdown
