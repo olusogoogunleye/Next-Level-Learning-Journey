@@ -1,16 +1,38 @@
 name: Code Optimization Request
 description: Request to Optimize existing code
+title: "Optimize {Component/Class Name}"
 assignees:
   - olusogoogunleye
 labels: [code-optimization]
 body:
-  - type: markdown
+  - type: input
+    id: optimization_summary
     attributes:
-      value: |
-        ## Before Submitting
-
-        "Please search existing issues to ensure this optimization request has not already been submitted."
-        "Duplicate issues will result to further delay in processing times."
+      label: Summary
+      description: "What is the purpose of this optimization?"
+      placeholder: "Example: Improve the SOQL query efficiency in AccountDataService to reduce governor limit usage."
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Task priority
+      description: How important is the optimization?
+      options:
+        - Highest
+        - High
+        - Moderate
+        - Low
+    validations:
+      required: true
+  - type: input
+    id: completion_date
+    attributes:
+      label: Expected Completion Date
+      description: "Specify expected available time"
+      placeholder: "mm-dd-yyyy"
+    validations:
+      required: true
   - type: checkboxes
     id: duplicate_check
     attributes:
@@ -19,23 +41,3 @@ body:
       options:
         - label: "I have searched existing issues and did not find a duplicate."
           required: true
-  - type: textarea
-    id: optimization_summary
-    attributes:
-      label: Summary
-      description: "Briefly describe what needs optimization and why."
-      placeholder: |
-        Example: The AccountService class performs multiple redundant SOQL queries inside a loop.
-        Recommend bulkification to improve performance and reduce governor limit usage.
-      render: markdown
-    validations:
-      required: true
-  - type: textarea
-    id: completion_date
-    attributes:
-      label: Expected Completion Date
-      description: "Specify expected available time"
-      value: |
-        mm-dd-yyy
-    validations:
-      required: true
