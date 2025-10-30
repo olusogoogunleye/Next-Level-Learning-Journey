@@ -1,0 +1,87 @@
+name: Bug Report
+description: Report a bug with sufficient details to enable investigation and resolution
+title: "Bug: {Brief Description} - {Environment/System}"
+labels: ["Bug"]
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Environment/System
+      description: Specify the system, environment, browser or device where the bug occurs
+      placeholder: "Example: Production, Staging, Chrome Browser, Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide Step-by-step instructions to reproduce the bug
+      placeholder: |
+        Example: 
+        1. Log in as a standard user.
+        2. Navigate to Accounts > New Account.
+        3. Fill in required fields and click Save.
+        4. Observe error message.
+      validations:
+        required: true
+
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Expected Behaviour
+      description: What should happen if the bug were not present?
+      placeholder: "Example: Users should be directed to the multifactor authentication page."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual_behaviour
+    attributes:
+      label: Actual Behaviour
+      description: What is actually happening? Include error messages, logs, or screenshots if possible
+      placeholder: "Example: When User clicks on the environment from the applicable okta tile, it returns Single Sign on error."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Impact/severity
+      description: How critical is the bug to business operations?
+      options:
+        - "Critical - Blocks production processes or major features."
+        - "High - Major functionality broken, workaround possible."
+        - "Medium - Minor feature broken, limited impact."
+        - "Low - Cosmetic issue or minimal impact."
+    validations:
+      required: true
+
+  - type: input
+    id: first_seen
+    attributes:
+      label: Date of First Notice
+      description: When did you first notice this bug?
+      placeholder: "Example: 10-28-2026"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: occurrence
+    attributes:
+      label: Frequency of occurence
+      description: How often does it occur?
+      options:
+        - Always since first noticed
+        - Sometimes
+        - Rarely
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Include any extra context that could help investigate and resolve the issue
+      placeholder: "Example: Upload screenshot of errors, attach log files or link to affected record."
+    validations:
+      required: true
