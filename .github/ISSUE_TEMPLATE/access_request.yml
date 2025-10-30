@@ -45,8 +45,8 @@ body:
         Has your manager approved this access request?
         If you selected “Yes,” please attach proof of approval in the next field.
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
   - type: textarea
