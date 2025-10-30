@@ -11,7 +11,6 @@ body:
       placeholder: "Example: Production, Staging, Chrome Browser, Windows 11"
     validations:
       required: true
-
   - type: textarea
     id: steps_to_reproduce
     attributes:
@@ -25,7 +24,6 @@ body:
         4. Observe error message.
       validations:
         required: true
-
   - type: textarea
     id: expected_behaviour
     attributes:
