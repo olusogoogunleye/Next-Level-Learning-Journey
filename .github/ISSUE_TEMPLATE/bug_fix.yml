@@ -23,7 +23,7 @@ body:
         2. Navigate to Accounts > New Account.
         3. Fill in required fields and click Save.
         4. Observe error message.
-      validations:
+    validations:
         required: true
 
   - type: textarea
@@ -69,7 +69,7 @@ body:
   - type: dropdown
     id: occurrence
     attributes:
-      label: Frequency of occurence
+      label: Frequency of occurrence
       description: How often does it occur?
       options:
         - Always since first noticed
