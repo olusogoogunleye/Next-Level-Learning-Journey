@@ -29,24 +29,29 @@ body:
       placeholder: "Example: 2 weeks"
     validations:
       required: true
-
   - type: textarea
     id: access_justification
     attributes:
       label: Justification of Access
       description: Provide details of why you require this access.
       placeholder: "Example: I have just joined the IT team and need access to complete assigned tasks in the environment."
-      render: markdown
     validations:
       required: true
-
   - type: dropdown
     id: manager_approval
     attributes:
       label: Manager Approval
-      description: Has your manager approved this access request?
+      description: |
+        Has your manager approved this access request?
+        If you selected “Yes,” please attach proof of approval in the next field.
       options:
-        - Yes, proceed to attach proof
+        - Yes
         - No
     validations:
       required: true
+  - type: textarea
+    id: approval_proof
+    attributes:
+      label: Proof of Approval
+      description: If your manager approved, paste relevant image or a link to the approval document
+      placeholder: "Example: https://company.sharepoint.com/approvals/manager_approval.pdf"
