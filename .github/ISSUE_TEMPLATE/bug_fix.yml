@@ -48,10 +48,10 @@ body:
       label: Impact/severity
       description: How critical is the bug to business operations?
       options:
-        - "Critical - Blocks production processes or major features."
-        - "High - Major functionality broken, workaround possible."
-        - "Medium - Minor feature broken, limited impact."
-        - "Low - Cosmetic issue or minimal impact."
+        - Critical - Blocks production processes or major features.
+        - High - Major functionality broken, workaround possible.
+        - Medium - Minor feature broken, limited impact.
+        - Low - Cosmetic issue or minimal impact.
     validations:
       required: true
 
@@ -82,5 +82,4 @@ body:
       label: Additional Information
       description: Include any extra context that could help investigate and resolve the issue
       placeholder: "Example: Upload screenshot of errors, attach log files or link to affected record."
-    validations:
-      required: true
+   
