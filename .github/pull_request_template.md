@@ -30,7 +30,7 @@ Explain how the changes were tested and validated.
   - [ ] Unit tests
   - [ ] Manual UI validation
   - [ ] Integration tests
-  - [ ] NA
+  - [ ] Not Required
 
 - Results summary:
 
