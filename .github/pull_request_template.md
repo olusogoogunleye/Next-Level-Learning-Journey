@@ -17,8 +17,6 @@ Select all that apply
 
 Provide a concise explanation of what this pull request does and why.
 
--
-
 <!-- Please include a summary of the change -->
 <!-- Any details that you think are important to review this PR? -->
 <!-- Are there other PRs related to this one? -->
@@ -39,8 +37,6 @@ Explain how the changes were tested and validated.
   - [ ] Not Required
 
 - Results summary:
-
--
 
  <!-- Provide summary of the test result -->
 
