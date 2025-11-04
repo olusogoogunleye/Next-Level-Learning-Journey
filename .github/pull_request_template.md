@@ -25,14 +25,20 @@ Provide a coincise explanation of what this pull request does and why.
 
 Explain how the changes were tested and validated.
 
-- Environment: [e.g., Sandbox / Staging / UAT]
+- Environment:
+  - [ ] Staging
+  - [ ] Prod
+  - [ ] Other Sandboxes - <!-- Specify the sandbox -->
+
 - Test Cases Executed:
   - [ ] Unit tests
   - [ ] Manual UI validation
   - [ ] Integration tests
-  - [ ] NA
+  - [ ] Not Required
 
 - Results summary:
+
+ <!-- Provide summary of the test result -->
 
 ## Checklist
 
