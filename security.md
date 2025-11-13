@@ -1,52 +1,75 @@
+Thank you for helping me make this repository safe for everyone to use.
+
 # Security Policy
 
 ## 🔒 Purpose
 
-This repository is part of a self-learning DevOps environment created to simulate real-world software development and CI/CD practices.
-
-## 🧩 Supported Versions
-
-Security updates or simulated patches apply to the following branches or versions:
-
-| Branch / Version | Status                |
-| ---------------- | --------------------- |
-| `main`           | ✅ Active Development |
-| Older branches   | ❌ Not maintained     |
-
----
+This policy outlines how security is managed across this repository. It ensures that all source code, configurations, and workflows are protected from unauthorized access, data leakage, or malicious actions.
 
 ## 🐛 Reporting a Vulnerability
 
-If you believe you’ve discovered a security vulnerability or configuration issue:
+If you discover a security vulnerability within the repository:
 
-1. **Do not create a public issue.**
-2. Contact the repository maintainer directly via email.
+1. **Do not disclose the issue publicly.**
+2. Immediately report it by emailing `security@nextlevel.com`.
 3. Provide the following details:
-   - Description of the issue
+   - Repository name
+   - Description of the vulnerability/issue
    - Steps to reproduce
-   - Possible impact or affected area
-   - Suggested mitigation (if known)
+   - Any potential impact or risk identified
+
+Our security team will investigate promptly, apply necessary patches and notify the relevant personnels.
 
 ---
 
 ## 🧠 Security Best Practices
 
-All contributors are encouraged to:
+All contributors must follow these practises:
 
-- Avoid committing secrets, tokens, or credentials.
+- **Never commit sensitive data** such as API Keys, Passwords or Provate tokens.
+- Store all secrets securely using **Github Secrets** or environment variables.
+- Use **branch protection rules** to prevent unauthorized direct commits to protected branches.
+- Require **pull requests (PRs)** for all changes to the main branch.
+- Enable two-factor authentication (2FA) on your Github account.
 - Use `.gitignore` to exclude sensitive or local files.
 - Review pull requests carefully before merging.
-- Keep dependencies up to date using dependency management tools.
 
 ---
 
-## 🧾 Responsible Disclosure
+## Dependency and Package Management
 
-We follow a simulated **responsible disclosure policy**.  
-If you identify a potential issue:
+- Use only **trusted, version-pinned dependencies** from verified sources.
+- Regularly update dependencies to patch known vulnerabilities.
+- Automated dependency scanning (e.g. **Dependabot**) must be enabled.
+- Do not use external scripts or packages unless approved by maintainers.
 
-- please report it privately first.
-- Acknowledgment and fix simulations will be handled through the normal workflow process.
+---
+
+## 🎬 Github Actions and Workflows
+
+When creating or modifying workflows:
+
+- Store all secrets in **Github repository or organization secrets**, not directly in yml files.
+- Limit permissions using the `permissions:` field in workflows and avoid using `write-all`.
+- Review logs regularly for unexpected behavior or failed runs.
+
+---
+
+## 🪪 Access Control
+
+- Access to repositories should follow the principle of least priviledge.
+- Roles and Permissions are managed by organization owners only.
+- Access reviews occur quarterly and upon user departure or role change.
+
+---
+
+## ![alt text](image-1.png) Policy Enforcement
+
+Non-compliance may result in:
+
+- Immediate suspension of Github access.
+- Removal from the organization or team.
+- Reporting to management or legal as necessary.
 
 ---
 
