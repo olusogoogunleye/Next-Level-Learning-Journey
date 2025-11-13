@@ -2,10 +2,7 @@
 
 ## 🔒 Purpose
 
-This repository is part of a self-learning DevOps environment created to simulate real-world software development and CI/CD practices.  
-While this is not a production system, maintaining security awareness and good reporting practices is encouraged.
-
----
+## This repository is part of a self-learning DevOps environment created to simulate real-world software development and CI/CD practices.
 
 ## 🧩 Supported Versions
 
@@ -14,7 +11,6 @@ Security updates or simulated patches apply to the following branches or version
 | Branch / Version | Status                |
 | ---------------- | --------------------- |
 | `main`           | ✅ Active Development |
-| `dev`            | ⚙️ Under Testing      |
 | Older branches   | ❌ Not maintained     |
 
 ---
@@ -24,7 +20,7 @@ Security updates or simulated patches apply to the following branches or version
 If you believe you’ve discovered a security vulnerability or configuration issue:
 
 1. **Do not create a public issue.**
-2. Contact the repository maintainer directly via email: `security@next-level-learning.local`.
+2. Contact the repository maintainer directly via email.
 3. Provide the following details:
    - Description of the issue
    - Steps to reproduce
@@ -47,8 +43,10 @@ All contributors are encouraged to:
 ## 🧾 Responsible Disclosure
 
 We follow a simulated **responsible disclosure policy**.  
-If you identify a potential issue, please report it privately first.  
-Acknowledgment and fix simulations will be handled through the normal workflow process.
+If you identify a potential issue:
+
+- please report it privately first.
+- Acknowledgment and fix simulations will be handled through the normal workflow process.
 
 ---
 
