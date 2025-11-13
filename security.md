@@ -61,8 +61,6 @@ When creating or modifying workflows:
 - Roles and Permissions are managed by organization owners only.
 - Access reviews occur quarterly and upon user departure or role change.
 
----
-
 ## 📝 Policy Enforcement
 
 Non-compliance may result in:
@@ -70,8 +68,6 @@ Non-compliance may result in:
 - Immediate suspension of Github access.
 - Removal from the organization or team.
 - Reporting to management or legal as necessary.
-
----
 
 ## 📘 Additional Resources
 
